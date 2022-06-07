@@ -1,17 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
     <link href="css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/estilo.css" rel="stylesheet" type="text/css" >
     <title>Sneakers</title>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  nav-header  border-bottom">
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.svg" alt="" class="img-fluid  align-bottom  img-nav ">
+               </a>
+
+               <button class="navbar-toggler navbar-light " type="button" data-toggle="collapse"
+                    data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Menu-Collapso">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+
+                <div class="collapse navbar-collapse nav-div  px-4"  id="nav1">
+                    <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item p-3 ">
+                            <a href="#" class="nav-link nav-a">Collections</a>
+                           
+                        </li>
+                        <li class="nav-item p-3">
+                            <a href="#" class="nav-link nav-a">Men</a>
+    
+                        </li>
+                        <li class="nav-item p-3 ">
+                            <a href="#" class="nav-link nav-a">Women</a>
+                            
+                        </li>
+                        <li class="nav-item p-3">
+                            <a href="#" class="nav-link  nav-a ">About</a>
+                        
+                        </li>
+                        <li class="nav-item p-3">
+                            <a href="#" class="nav-link  nav-a ">Contact</a>
+                        </li>
+                        
+                    </ul>
+                  
+                </div> 
+                <a href="#" class="navbar-brand a-tool">
+                    <span>3</span>
+                    <img src="images/icon-cart.svg" alt="carrinho" class="img-fluid p-4 ">      
+               </a>
+               <a href="#" class="navbar-brand">
+                <img src="images/image-avatar.png" alt="cliente" class="img-fluid img-avatar img-reponsive">
+            </a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex align-items-center mt-5">
+                <div class="col-md-6 ">
+                    <img src="images/image-product-1.jpg" class="img-fluid img-produto1 mt-5 ml-5" alt="produto">
+                    <div class="row div-thumb mt-4 ml-5 p-1 ">
+                        <div class="col-md-3 item ">
+                            <a href="#imagem1" class="img-thumb">
+                                <img src="images/image-product-1.jpg" class="img-fluid img-produto" alt="produto">
+                            </a>     
+                        </div>
+                        <div class="col-md-3 item " class="img-thumb">
+                        
+                            <a href="#imagem2 ">
+                                <img src="images/image-product-2.jpg" class="img-fluid img-produto" alt="produto">
+                             </a>
+                        </div>
+                        <div class="col-md-3 item">
+                            <a href="#imagem3" class="img-thumb">
+                                <img src="images/image-product-3.jpg" class="img-fluid img-produto" alt="produto">
+                            </a>
+                            </div>
+                        <div class="col-md-3 item">
+                            <a href="#imagem4 "class="img-thumb">
+                                <img src="images/image-product-4.jpg" class="img-fluid img-produto" alt="produto">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lightboxes">
+                        <div class="lightbox" id="imagem1">
+                          <a href="#" class="fechar">&times;</a>
+                          <div class="conteudo">
+                            <a   href="#imagem4" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <img src="images/image-product-1.jpg" /> 
+                            <a href="#imagem2" class="next" onclick="plusSlides(1)">&#10095;</a>
+                          </div>
+                        </div>
+                        <div class="lightbox" id="imagem2">
+                          <a href="#" class="fechar">&times;</a>
+                          <div class="conteudo">
+                            <a   href="#imagem1" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <img src="images/image-product-2.jpg" />
+                            <a href="#imagem3" class="next" onclick="plusSlides(1)">&#10095;</a>
+                          </div>
+                        </div>
+                        <div class="lightbox" id="imagem3">
+                          <a href="#" class="fechar">&times;</a>
+                          <div class="conteudo">
+                            <a   href="#imagem2" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <img src="images/image-product-3.jpg" />
+                            <a href="#imagem4" class="next" onclick="plusSlides(1)">&#10095;</a>
+                          </div>
+                        </div>
+                        <div class="lightbox" id="imagem4">
+                            <a href="#" class="fechar">&times;</a>
+                            <div class="conteudo">
+                            <a   href="#imagem3" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                              <img src="images/image-product-4.jpg" />
+                              <a href="#imagem1" class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 mb-5 mt-5">
+                    <div class="texto">
+                        <p class="texto-subtitle">Sneaker Company</p>
+                        <h1 class="texto-title">Fall Limited Edition Sneakers</h1>
+                        <p class="texto-p1">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                        durable rubber outer sole, they’ll withstand everything the weather can offer.
+                        </p>
+                        <h2 class="texto-t2">$125.00  <span class="texto-span ml-3">  50%</span></h2>
+                        <p class="texto-p2"> $250.00</p>
+                    </div>
+                    <div class="carrinho ">
+                        <div class="div-carrinho "><span><img class="float-left" src="images/icon-minus.svg" alt=""></span>0<span><img class="float-right" src="images/icon-plus.svg" alt=""></span></div>
+                        <button class="btn btn-compra mt-2"><span><img class="mr-3" src="images/icon-cart_branco.svg" alt=""></span>Add to cart</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+    
 </body>
 </html>
